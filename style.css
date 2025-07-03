@@ -1,0 +1,141 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.task-form input,
+.task-form select {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: self-end;
+}
+
+.filters {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.filters label {
+  font-weight: bold;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.task-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  margin-right: 10px;
+}
+
+.High {
+  background-color: #d32f2f;
+}
+
+.Medium {
+  background-color: #fbc02d;
+  color: black;
+}
+
+.Low {
+  background-color: #388e3c;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.countdown {
+  font-size: 12px;
+  color: #888;
+}
+.kk{
+    border-width: 1px;
+    border-color: rgb(216, 211, 211);
+}
+.one{
+    width: 50%;
+}
+.two{
+    width: 95%;
+}

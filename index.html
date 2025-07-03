@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Todo List</h1>
+
+    <div class="task-form">
+        <label for="task-title">Task Title</label>
+      <input type="text" id="task-title" placeholder="Enter task title" class="kk" />
+      <label for="task-priority">Priority</label>
+      <select id="task-priority" class="kk">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <label for="task-deadline">Deadline</label>
+      <input type="date" id="task-deadline" class="kk"/>
+      <button id="add-task">+ Add Task</button>
+    </div>
+
+    <div class="filters">
+        <div class="one">
+      <label for="filter-status">Status</label><br/>
+        <select id="filter-status" class="two">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+     </div>
+     <div class="one">
+      <label for="filter-priority">Priority</label><br/>
+        <select id="filter-priority" class="two">
+          <option value="all">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="task-list" class="task-list"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
